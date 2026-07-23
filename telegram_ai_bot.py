@@ -30,7 +30,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not TELEGRAM_BOT_TOKEN or not GEMINI_API_KEY:
     raise RuntimeError("TELEGRAM_BOT_TOKEN ve GEMINI_API_KEY .env dosyasında tanımlı olmalı.")
 
-MODEL_NAME = "gemini-2.5-flash"
+MODEL_NAME = "gemini-1.5-flash"
 FALLBACK_MODEL_NAME = "gemini-2.5-flash-lite"
 MAX_HISTORY_MESSAGES = 20
 MAX_RETRIES = 3
